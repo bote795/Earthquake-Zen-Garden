@@ -1,4 +1,7 @@
 const path = require("path");
+const ESLintPlugin = require("eslint-webpack-plugin");
+const PrettierPlugin = require("prettier-webpack-plugin");
+
 const HTMLwebpackplugin = require("html-webpack-plugin");
 const rules = [
   {
@@ -32,5 +35,7 @@ module.exports = {
     new HTMLwebpackplugin({
       template: "./public/index.html",
     }),
+    new ESLintPlugin(),
+    new PrettierPlugin(),
   ],
 };
