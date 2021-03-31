@@ -4,8 +4,13 @@
   align-items: center;
   padding-left: 1rem;
   padding-right: 1rem;
+  background-color: #ededed;
 }
 
 .nav__logo {
   height: 3rem;
+}
+
+h1 {
+  color: #777777;
 }

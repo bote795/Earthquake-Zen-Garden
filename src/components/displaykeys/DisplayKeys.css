@@ -1,0 +1,11 @@
+dl {
+  display: flex;
+  flex-wrap: wrap;
+}
+dt {
+  width: 22%;
+}
+dd {
+  margin-left: auto;
+  width: 78%;
+}

@@ -1,0 +1,17 @@
+.profile {
+  display: flex;
+}
+.profile__avatar {
+  width: 100%;
+}
+h2 {
+  text-align: center;
+}
+.profile__item_avatar {
+  width: 25%;
+  margin-right: 0.5rem;
+}
+
+.profile__item_display_keys {
+  width: 75%;
+}

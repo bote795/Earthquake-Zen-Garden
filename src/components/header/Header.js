@@ -1,15 +1,26 @@
-import React from "react";
+import React, { useContext } from "react";
+import Skeleton from "react-loading-skeleton";
+import { Link } from "react-router-dom";
+
 import useSite from "./../../hooks/use-site";
 import styles from "./header.css";
-import Skeleton from "react-loading-skeleton";
+import * as ROUTES from "./../../constants/routes";
+import UserContext from "../../context/user";
 
 export default function Header() {
+  const { user } = useContext(UserContext);
   const { site } = useSite();
-  let username;
+  let username = user?.firstName;
   return (
     <nav className={styles.nav}>
       {site ? (
-        <img className={styles.nav__logo} src={site.logoImage} alt="Realtor logo" />
+        <Link to={ROUTES.EARTHQUAKES}>
+          <img
+            className={styles.nav__logo}
+            src={site.logoImage}
+            alt="Realtor logo"
+          />
+        </Link>
       ) : (
         <Skeleton
           className={styles.nav__logo}
@@ -20,7 +31,9 @@ export default function Header() {
       )}
 
       <h1>{site?.title || <Skeleton width={200} />}</h1>
-      <span> Welcome {username || <Skeleton width={50} />}</span>
+      <Link to={ROUTES.PROFILE}>
+        <span> Welcome {username || <Skeleton width={50} />}</span>
+      </Link>
     </nav>
   );
 }

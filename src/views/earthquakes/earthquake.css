@@ -1,0 +1,38 @@
+.earthquake__item {
+  width: 80%;
+  margin: auto;
+}
+
+@media (min-width: 640px) {
+  .earthquake__item {
+    width: 50%;
+  }
+}
+
+@media (min-width: 768px) {
+  .earthquake__item {
+    width: 50%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .earthquake__item {
+    width: 50%;
+  }
+}
+
+@media (min-width: 1280px) {
+  .earthquake__item {
+    width: 40%;
+  }
+}
+
+@media (min-width: 1536px) {
+  .earthquake__item {
+    width: 45%;
+  }
+}
+
+h2 {
+  text-align: center;
+}

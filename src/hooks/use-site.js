@@ -6,7 +6,6 @@ export default function useSite() {
   useEffect(() => {
     async function getActiveSite() {
       const response = await getSiteInfo();
-      console.log("calling getActiveSite");
       setActiveSite(response);
     }
     if (!activeSite) {
