@@ -1,4 +1,4 @@
-# Earthquake-Zen-Garden-
+# Earthquake-Zen-Garden
 
 Take home exercise
 
@@ -24,3 +24,4 @@ Note: tried to simulate API requests with a 3sec delay
 [ ] didnt make use of a store (just contexts), but in scale depending can be refactored to use redux  
 [ ] refactor some of webpack to add more checks  
 [ ] check lighthouse report
+[ ] add husky with commit styling check
