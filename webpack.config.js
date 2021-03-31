@@ -31,6 +31,9 @@ module.exports = {
     publicPath: "/",
     path: path.resolve(__dirname, "./build"),
   },
+  devServer: {
+    historyApiFallback: true,
+  },
   module: { rules },
   plugins: [
     new HTMLwebpackplugin({
